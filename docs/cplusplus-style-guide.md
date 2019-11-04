@@ -56,7 +56,7 @@ This documents contains guidelines regarding:
  * Nicol N. Schraudolph, 1999 Neural computation 11, 853-862.
  *
  * @param x the argument that is used in the exponent 2^(x / M_LN2).
- * @returns The exponetial of x
+ * @returns The exponential of x
  */
 double Exp(double const &x)
 {
@@ -247,7 +247,7 @@ public:
   Transaction()                    = default;
   Transaction(Transaction const &) = default;
   Transaction(Transaction &&)      = deleted;
-  ~Transaction() = default;
+  ~Transaction()                   = default;
 
   Transaction operator(Transaction const &) = default;
   Transaction operator(Transaction &&)      = deleted;
